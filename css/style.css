@@ -734,12 +734,10 @@ h3 {
     min-height: 90px;
   }
   .skills-logo {
-    /* gap: 20px; */
-    gap: 30px;
+    gap: 20px;
   }
   .tools-logo {
-    /* gap: 25px; */
-    gap: 35px;
+    gap: 25px;
   }
   .git {
     max-width: 90px;
