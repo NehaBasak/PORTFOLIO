@@ -123,12 +123,12 @@ nav,
   font-size: 50px;
   color: whitesmoke;
 }
-.heading {
+/* .heading {
   font-size: 45px;
   white-space: nowrap;
   overflow: hidden;
   width: 0;
-  animation: typing 3s steps(20) forwards, blink 0.75s step-end infinite;
+  animation: typing 2s steps(20) forwards, blink 0.75s step-end infinite;
   background: linear-gradient(to right, #053005, #100f10);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -146,6 +146,17 @@ nav,
   50% {
     border-color: transparent;
   }
+} */
+h1 > span {
+  font-size: 45px;
+  background: linear-gradient(to right, #053005, #100f10);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: fit-content;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: blinkCursor 0.75s step-end infinite;
+  border-right: 2px solid transparent;
 }
 .banner-text > p {
   font-size: 20px;
@@ -292,7 +303,7 @@ h3 {
   padding: 15px;
   border-radius: 12px;
   background-color: rgba(9, 22, 48, 0.8);
-  box-shadow: inset 0 0 20px rgba(25, 244, 236, 0.3);
+  box-shadow: 0 0 20px rgba(25, 244, 236, 0.3);
 }
 .tools-section {
   /* padding: 5px; */
@@ -304,7 +315,7 @@ h3 {
   padding: 15px;
   border-radius: 12px;
   background-color: rgba(9, 22, 48, 0.8);
-  box-shadow: inset 0 0 20px rgba(25, 244, 236, 0.3);
+  box-shadow: 0 0 20px rgba(25, 244, 236, 0.3);
 }
 
 /* Education Section */
@@ -343,7 +354,7 @@ h3 {
   padding: 15px;
   border-radius: 12px;
   background-color: rgba(9, 22, 48, 0.8);
-  box-shadow: inset 0 0 20px rgba(25, 244, 236, 0.3);
+  box-shadow: 0 0 20px rgba(25, 244, 236, 0.3);
 }
 .college1-part {
   padding: 5px;
@@ -355,7 +366,7 @@ h3 {
   padding: 15px;
   border-radius: 12px;
   background-color: rgba(9, 22, 48, 0.8);
-  box-shadow: inset 0 0 20px rgba(25, 244, 236, 0.3);
+  box-shadow: 0 0 20px rgba(25, 244, 236, 0.3);
 }
 .college2-part {
   padding: 5px;
@@ -367,7 +378,7 @@ h3 {
   padding: 15px;
   border-radius: 12px;
   background-color: rgba(9, 22, 48, 0.8);
-  box-shadow: inset 0 0 20px rgba(25, 244, 236, 0.3);
+  box-shadow: 0 0 20px rgba(25, 244, 236, 0.3);
 }
 
 /* Education Small Screen */
@@ -416,7 +427,7 @@ h3 {
   padding: 15px;
   border-radius: 12px;
   background-color: rgba(9, 22, 48, 0.8);
-  box-shadow: inset 0 0 20px rgba(25, 244, 236, 0.3);
+  box-shadow: 0 0 20px rgba(25, 244, 236, 0.3);
 }
 
 /* Contact Me Section */
@@ -442,7 +453,7 @@ h3 {
   padding: 15px;
   border-radius: 12px;
   background-color: rgba(9, 22, 48, 0.8);
-  box-shadow: inset 0 0 20px rgba(25, 244, 236, 0.3);
+  box-shadow: 0 0 20px rgba(25, 244, 236, 0.3);
 }
 .contact-part > h3 {
   font-size: 25px;
@@ -484,8 +495,8 @@ h3 {
     font-size: 40px;
     margin-bottom: 10px;
   }
-  .heading {
-    font-size: 40px;
+  h1>span{
+    font-size: 38px;
   }
 
   /* Skill & Tools Section */
@@ -620,7 +631,6 @@ h3 {
     background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
     border-radius: 20px;
     border: 4px solid #00e0ff;
-    box-shadow: 0 0 15px rgba(0, 224, 255, 0.4);
   }
   .slide h3 {
     text-align: end;
@@ -683,7 +693,7 @@ h3 {
     font-size: 14px;
   }
   .icon {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
   .nav-logo {
     max-width: 200px;
@@ -693,9 +703,12 @@ h3 {
   .banner-section {
     margin-bottom: 10px;
   }
-  .banner-text > h1,
-  .banner-text > .heading {
-    font-size: 30px;
+  .banner-text > h1{
+     font-size: 30px;
+  }
+
+  .banner-text > h1>span {
+    font-size: 28px;
   }
   .banner-text > p {
     font-size: 15px;
