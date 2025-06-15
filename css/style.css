@@ -204,6 +204,8 @@ h3 {
 .html {
   max-width: 200px;
   min-height: 200px;
+  text-align: center;
+  font-size: 20px;
 }
 .html > img {
   width: 100%;
@@ -213,6 +215,8 @@ h3 {
 .css {
   max-width: 130px;
   min-height: 130px;
+  text-align: center;
+  font-size: 20px;
 }
 .css > img {
   width: 100%;
@@ -222,6 +226,8 @@ h3 {
 .js {
   max-width: 160px;
   min-height: 160px;
+  text-align: center;
+  font-size: 20px;
 }
 .js > img {
   width: 100%;
@@ -237,6 +243,8 @@ h3 {
 .git {
   max-width: 150px;
   min-height: 150px;
+  text-align: center;
+  font-size: 20px;
 }
 .git > img {
   width: 100%;
@@ -246,6 +254,8 @@ h3 {
 .figma {
   max-width: 150px;
   min-height: 150px;
+  text-align: center;
+  font-size: 20px;
 }
 .figma > img {
   width: 100%;
@@ -255,6 +265,8 @@ h3 {
 .vs {
   max-width: 150px;
   min-height: 150px;
+  text-align: center;
+  font-size: 20px;
 }
 .vs > img {
   width: 100%;
@@ -277,7 +289,7 @@ h3 {
   background: linear-gradient(to right, #3cd8f3, #585cd3);
 }
 .skills {
-  padding: 15px;
+  padding: 50px;
   border-radius: 12px;
   background-color: rgba(9, 22, 48, 0.8);
   box-shadow: 0 0 20px rgba(25, 244, 236, 0.3);
@@ -289,7 +301,7 @@ h3 {
   background: linear-gradient(to right, #3cd8f3, #585cd3);
 }
 .tools {
-  padding: 15px;
+  padding: 50px;
   border-radius: 12px;
   background-color: rgba(9, 22, 48, 0.8);
   box-shadow: 0 0 20px rgba(25, 244, 236, 0.3);
@@ -472,7 +484,7 @@ h3 {
     font-size: 40px;
     margin-bottom: 10px;
   }
-  h1>span{
+  h1 > span {
     font-size: 38px;
   }
 
@@ -570,13 +582,19 @@ h3 {
     width: 100%;
   }
   .skill-tool-section > div > div {
-    row-gap: 20px;
+    row-gap: 30px;
   }
   .tools-logo {
     gap: 40px;
   }
   .tools-logo {
     gap: 25px;
+  }
+  .skills {
+    padding: 40px;
+  }
+  .tools {
+    padding: 40px;
   }
 
   /* Education Section */
@@ -680,11 +698,11 @@ h3 {
   .banner-section {
     margin-bottom: 10px;
   }
-  .banner-text > h1{
-     font-size: 30px;
+  .banner-text > h1 {
+    font-size: 30px;
   }
 
-  .banner-text > h1>span {
+  .banner-text > h1 > span {
     font-size: 28px;
   }
   .banner-text > p {
@@ -714,14 +732,17 @@ h3 {
   .html {
     max-width: 120px;
     min-height: 120px;
+    font-size: 12px;
   }
   .css {
     max-width: 80px;
     min-height: 80px;
+    font-size: 12px;
   }
   .js {
     max-width: 90px;
     min-height: 90px;
+     font-size: 12px;
   }
   .skills-logo {
     gap: 20px;
@@ -732,20 +753,30 @@ h3 {
   .git {
     max-width: 90px;
     min-height: 90px;
+     font-size: 12px;
   }
   .figma {
     max-width: 90px;
     min-height: 90px;
+     font-size: 12px;
   }
   .vs {
     max-width: 90px;
     min-height: 90px;
+     font-size: 12px;
   }
   h3 {
     font-size: 15px;
+    margin-bottom: 10px;
   }
   .tools > h3 {
-    margin-bottom: 25px;
+    margin-bottom: 10px;
+  }
+  .skills {
+    padding: 30px;
+  }
+  .tools {
+    padding: 30px;
   }
 
   /* Eduction Small Section */
