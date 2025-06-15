@@ -39,8 +39,8 @@ a {
 /* Header Section */
 .header-section {
   padding: 10px 0;
-  /* background-color: grey; */
-  background-color: rgba(9, 22, 48, 0.8);
+  background-color: grey;
+  /* background-color: rgba(9, 22, 48, 0.8); */
 }
 .nav-logo {
   max-width: 250px;
@@ -117,7 +117,7 @@ nav,
 }
 .banner-section {
   padding: 20px;
-  min-height: 100vh;
+  min-height: 500px;
   margin-bottom: 40px;
 }
 .banner-text > h1 {
