@@ -123,30 +123,6 @@ nav,
   font-size: 50px;
   color: whitesmoke;
 }
-/* .heading {
-  font-size: 45px;
-  white-space: nowrap;
-  overflow: hidden;
-  width: 0;
-  animation: typing 2s steps(20) forwards, blink 0.75s step-end infinite;
-  background: linear-gradient(to right, #053005, #100f10);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  margin-bottom: 20px;
-}
-@keyframes typing {
-  from {
-    width: 0px;
-  }
-  to {
-    width: 300px;
-  }
-}
-@keyframes blink {
-  50% {
-    border-color: transparent;
-  }
-} */
 h1 > span {
   font-size: 45px;
   background: linear-gradient(to right, #053005, #100f10);
@@ -157,6 +133,7 @@ h1 > span {
   white-space: nowrap;
   animation: blinkCursor 0.75s step-end infinite;
   border-right: 2px solid transparent;
+  text-wrap: wrap;
 }
 .banner-text > p {
   font-size: 20px;
