@@ -170,9 +170,17 @@ h1 > span {
   border-radius: 50%;
 }
 .git-link {
-  max-width: 80px;
+  max-width: 90px;
 }
 .git-link > a > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.linkedin {
+  max-width: 50px;
+}
+.linkedin > a > img {
   width: 100%;
   height: 100%;
   object-fit: contain;
@@ -276,7 +284,7 @@ h3 {
 .tools-logo {
   display: flex;
   flex-wrap: wrap;
-  gap: 65px;
+  gap: 60px;
   justify-content: center;
 }
 .tools > h3 {
@@ -492,6 +500,42 @@ h3 {
   .skill-tool-section {
     margin-bottom: 80px;
   }
+  .git > img {
+    width: 70%;
+    height: 70%;
+    object-fit: contain;
+  }
+  .figma > img {
+    width: 70%;
+    height: 70%;
+    object-fit: contain;
+  }
+  .vs > img {
+    width: 70%;
+    height: 70%;
+    object-fit: contain;
+  }
+  .js > img {
+    width: 70%;
+    height: 70%;
+    object-fit: contain;
+  }
+  .css > img {
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+  }
+  .html > img {
+    width: 70%;
+    height: 70%;
+    object-fit: contain;
+  }
+  .tools {
+    padding: 40px;
+  }
+  .skills {
+    padding: 30px;
+  }
 
   /* Education Section */
   .education-section {
@@ -501,6 +545,21 @@ h3 {
   /* Experience Section */
   .experience-section {
     margin-bottom: 80px;
+  }
+}
+@media screen and (max-width: 940px) {
+  /* Skill & Tools Section */
+  .col-60 {
+    width: 100%;
+  }
+  .skill-tool-section > div > div {
+    row-gap: 40px;
+  }
+  .skills-logo {
+    gap: 70px;
+  }
+  .tools-logo {
+    gap: 60px;
   }
 }
 @media screen and (max-width: 930px) {
@@ -542,9 +601,21 @@ h3 {
   }
 
   /* Skills & Tools Section */
-  .skill-tool-section {
+  /* .skill-tool-section {
     margin-bottom: 70px;
   }
+  .tools-logo {
+    gap: 25px;
+  }
+  .skills-logo {
+    gap: 37px;
+  }
+  .skills {
+    padding: 20px;
+  }
+  .tools {
+    padding: 20px;
+  } */
 
   /* Education Section */
   .education-section {
@@ -585,16 +656,16 @@ h3 {
     row-gap: 30px;
   }
   .tools-logo {
-    gap: 40px;
+    gap: 30px;
   }
-  .tools-logo {
-    gap: 25px;
+  .skills-logo {
+    gap: 10px;
   }
   .skills {
-    padding: 40px;
+    padding: 20px;
   }
   .tools {
-    padding: 40px;
+    padding: 20px;
   }
 
   /* Education Section */
@@ -717,6 +788,9 @@ h3 {
   .git-link {
     max-width: 60px;
   }
+  .linkedin {
+    max-width: 40px;
+  }
   .banner-btn-main {
     gap: 10px;
   }
@@ -742,28 +816,30 @@ h3 {
   .js {
     max-width: 90px;
     min-height: 90px;
-     font-size: 12px;
+    font-size: 12px;
   }
   .skills-logo {
-    gap: 30px;
+    /* gap: 30px; */
+    gap: 20px;
   }
   .tools-logo {
-    gap: 45px;
+    /* gap: 45px; */
+    gap: 30px;
   }
   .git {
     max-width: 90px;
     min-height: 90px;
-     font-size: 12px;
+    font-size: 12px;
   }
   .figma {
     max-width: 90px;
     min-height: 90px;
-     font-size: 12px;
+    font-size: 12px;
   }
   .vs {
     max-width: 90px;
     min-height: 90px;
-     font-size: 12px;
+    font-size: 12px;
   }
   h3 {
     font-size: 15px;
@@ -773,10 +849,10 @@ h3 {
     margin-bottom: 10px;
   }
   .skills {
-    padding: 30px;
+    padding: 10px;
   }
   .tools {
-    padding: 30px;
+    padding: 10px;
   }
 
   /* Eduction Small Section */
