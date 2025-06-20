@@ -7,26 +7,11 @@
 body {
   font-family: "Playfair Display", serif;
   background-color: rgba(9, 22, 48, 0.8);
-  cursor: none;
 }
 body,
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
-}
-.custom-cursor {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 30px;
-  height: 30px;
-  background: rgba(0, 0, 0, 0.1);
-  border-radius: 50%;
-  pointer-events: none;
-  box-shadow: 0 0 15px 8px rgba(0, 0, 0, 0.2);
-  transform: translate(-50%, -50%);
-  transition: transform 0.05s ease-out;
-  z-index: 9999;
 }
 /* Common Section*/
 .container {
