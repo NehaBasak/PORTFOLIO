@@ -177,6 +177,9 @@ h1 > span {
   height: 100%;
   object-fit: contain;
 }
+.git-link:hover {
+  transform: scale(1.2);
+}
 .linkedin {
   max-width: 50px;
 }
@@ -184,6 +187,9 @@ h1 > span {
   width: 100%;
   height: 100%;
   object-fit: contain;
+}
+.linkedin:hover {
+  transform: scale(1.2);
 }
 .banner-btn-main {
   display: flex;
@@ -284,7 +290,7 @@ h3 {
 .tools-logo {
   display: flex;
   flex-wrap: wrap;
-  gap: 60px;
+  gap: 70px;
   justify-content: center;
 }
 .tools > h3 {
@@ -427,8 +433,99 @@ h3 {
   box-shadow: 0 0 20px rgba(25, 244, 236, 0.3);
 }
 
-/* Contact Me Section */
+/* Project Section */
+.project-section > div > div {
+  row-gap: 20px;
+}
+.project-section {
+  margin-bottom: 110px;
+}
+.project-img {
+  max-width: 500px;
+  height: auto;
+  margin-bottom: 10px;
+}
+.project-img > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 15px;
+}
+.project-section > div > h2 {
+  font-size: 40px;
+  margin-bottom: 40px;
+  color: whitesmoke;
+}
+.box > p {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: whitesmoke;
+  text-align: center;
+}
+.box > h3 {
+  font-size: 25px;
+  margin-bottom: 15px;
+  color: whitesmoke;
+  text-align: center;
+}
+.main-box {
+  padding: 5px;
+  border-radius: 12px;
+  color: white;
+  background: linear-gradient(to right, #3cd8f3, #585cd3);
+}
+.box {
+  padding: 15px;
+  border-radius: 12px;
+  background-color: rgba(9, 22, 48, 0.8);
+  box-shadow: 0 0 20px rgba(25, 244, 236, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.project-btn {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.project-btn1 {
+  padding: 15px;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  max-width: fit-content;
+  border-radius: 15px;
+  background-color: grey;
+}
+.project-btn1 > a {
+  color: black;
+  font-size: 20px;
+}
+.project-btn1:hover {
+  background-color: cadetblue;
+}
+.project-btn2 {
+  padding: 15px;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  max-width: fit-content;
+  border-radius: 15px;
+  background-color: grey;
+}
+.project-btn2 > a {
+  color: black;
+  font-size: 20px;
+}
+.project-btn2:hover {
+  background-color: cadetblue;
+}
 
+/* Contact Me Section */
 .contact-section > div > div {
   display: flex;
   justify-content: center;
@@ -441,7 +538,7 @@ h3 {
   text-align: center;
 }
 .last-part {
-  padding: 5px;
+  /* padding: 5px; */
   border-radius: 12px;
   color: white;
   background: linear-gradient(to right, #3cd8f3, #585cd3);
@@ -536,6 +633,9 @@ h3 {
   .skills {
     padding: 30px;
   }
+  .tools-logo {
+    gap: 60px;
+  }
 
   /* Education Section */
   .education-section {
@@ -544,6 +644,10 @@ h3 {
 
   /* Experience Section */
   .experience-section {
+    margin-bottom: 80px;
+  }
+  /* Project Section */
+  .project-section {
     margin-bottom: 80px;
   }
 }
@@ -600,23 +704,6 @@ h3 {
     flex-direction: column;
   }
 
-  /* Skills & Tools Section */
-  /* .skill-tool-section {
-    margin-bottom: 70px;
-  }
-  .tools-logo {
-    gap: 25px;
-  }
-  .skills-logo {
-    gap: 37px;
-  }
-  .skills {
-    padding: 20px;
-  }
-  .tools {
-    padding: 20px;
-  } */
-
   /* Education Section */
   .education-section {
     margin-bottom: 70px;
@@ -624,6 +711,11 @@ h3 {
 
   /* Experience Section */
   .experience-section {
+    margin-bottom: 70px;
+  }
+
+  /* Project Section  */
+  .project-section {
     margin-bottom: 70px;
   }
 }
@@ -739,6 +831,11 @@ h3 {
 
   /* Experience Section */
   .experience-section {
+    margin-bottom: 40px;
+  }
+
+  /* Project Section  */
+  .project-section {
     margin-bottom: 40px;
   }
 }
@@ -906,6 +1003,34 @@ h3 {
     font-size: 15px;
     margin-bottom: 15px;
   }
+
+  /* Project Section  */
+  .project-section {
+    margin-bottom: 20px;
+  }
+  .project-section > div > h2 {
+    font-size: 30px;
+    margin-bottom: 25px;
+  }
+  .box > p {
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+  .box > h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .project-btn2 > a {
+  color: black;
+  font-size: 16px;
+}
+.project-btn1 > a {
+  color: black;
+  font-size: 16px;
+}
+.box{
+  padding: 10px;
+}
 
   /* Contact Me Section */
   .contact-section > div > h2 {
