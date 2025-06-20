@@ -11,7 +11,7 @@ body {
 body,
 html {
   scroll-behavior: smooth;
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
 }
 /* Common Section*/
 .container {
@@ -526,6 +526,9 @@ h3 {
 }
 
 /* Contact Me Section */
+.contact-section{
+  margin-bottom: 20px;
+}
 .contact-section > div > div {
   display: flex;
   justify-content: center;
