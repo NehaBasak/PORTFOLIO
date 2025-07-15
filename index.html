@@ -30,12 +30,19 @@
         <nav>
           <div class="nav-logo">
             <a href=""
-              ><img src="./assets/Titles_0001_Portfolio.png" alt=""
+              ><img src="./assets/image (14).png" alt=""
             /></a>
           </div>
-          <label for="dash" class="icon"
-            ><i class="fa-solid fa-bars"></i
-          ></label>
+          <label class="hamburger" for="hamburger">
+            <input
+              type="checkbox"
+              id="hamburger"
+              aria-label="Toggle navigation"
+            />
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
           <div class="nav-right">
             <ul>
               <li class="list"><a href="#about-me">About Me</a></li>
@@ -562,15 +569,18 @@
           </div>
         </div>
       </div>
+      <button id="scrollToTopBtn" title="Go to top">↑</button>
     </footer>
 
     <!-- Java Script Link -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/index.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <script>
       AOS.init();
     </script>
+
     <script>
       var swiper = new Swiper(".mySwiper", {
         effect: "flip",

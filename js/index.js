@@ -1,10 +1,8 @@
 // Small Screen Drop Down
 const navRight = document.querySelector(".nav-right");
-console.log(navRight);
-const list = document.querySelector(".icon");
-console.log(list);
-list.addEventListener("click", () => {
-  console.log(navRight.classList);
+const menu = document.querySelector(".hamburger input");
+
+menu.addEventListener("click", () => {
   navRight.classList.toggle("active");
 });
 
@@ -21,7 +19,7 @@ function type() {
       setTimeout(() => {
         isDeleting = true;
         type();
-      }, 1500); // Pause before deleting
+      }, 1500);
       return;
     }
   } else {
@@ -29,11 +27,11 @@ function type() {
     index--;
     if (index === 0) {
       isDeleting = false;
-      setTimeout(type, 2000); // 2s delay before typing again
+      setTimeout(type, 2000);
       return;
     }
   }
-  setTimeout(type, 100); // Typing/deleting speed
+  setTimeout(type, 100);
 }
 type();
 
@@ -62,3 +60,25 @@ function prevSlide() {
   updateSliderPosition();
 }
 
+// Get the button
+const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+// Show button when user scrolls down 100px
+window.onscroll = function () {
+  if (
+    document.body.scrollTop > 100 ||
+    document.documentElement.scrollTop > 100
+  ) {
+    scrollToTopBtn.style.display = "block";
+  } else {
+    scrollToTopBtn.style.display = "none";
+  }
+};
+
+// Scroll to top when clicked
+scrollToTopBtn.addEventListener("click", function () {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+});
