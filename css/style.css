@@ -454,6 +454,10 @@ h3 {
 .small-slider-section {
   display: none;
 }
+.edu-small,
+.nav-buttons {
+  display: none;
+}
 
 /* Experience Section */
 .experience-section {
@@ -618,7 +622,7 @@ h3 {
 }
 
 /* small-project-section */
-.small-project-section {
+.project-section .small-scr {
   display: none;
 }
 
@@ -971,16 +975,15 @@ form > label {
   }
 
   /* Education Section */
-  .education-section {
+  .edu-small,
+  .nav-buttons {
+    display: block;
+  }
+  .education-section .edu-big{
     display: none;
   }
-
-  /* Eduction Small Section */
-  .small-slider-section {
+  .education-section {
     margin-bottom: 40px;
-  }
-  .small-slider-section {
-    display: block;
   }
   .slider-container {
     max-width: 700px;
@@ -1061,15 +1064,21 @@ form > label {
   /* Project Section  */
   .project-section {
     margin-bottom: 40px;
-    display: none;
   }
 
   /* Project Slider Section  */
-  .small-project-section {
+
+  .project-section .swiper {
+    display: block;
+  }
+  .project-section .big-scr {
+    display: none;
+  }
+  .project-section {
     display: block;
     margin-bottom: 40px;
   }
-  .small-project-section > div > h2 {
+  .project-section > div > h2 {
     font-size: 40px;
     margin-bottom: 40px;
     color: whitesmoke;
@@ -1077,21 +1086,14 @@ form > label {
   .swiper {
     max-width: 600px;
     min-height: 500px;
-    /* padding: 50px; */
     transform-style: preserve-3d;
   }
-
   .swiper-slide {
     background-position: center;
     background-size: cover;
     width: 300px;
     height: 300px;
   }
-
-  /* .swiper-slide img {
-    display: block;
-    width: 100%;
-  } */
 }
 @media screen and (max-width: 425px) {
   /* Header Section */
@@ -1181,7 +1183,7 @@ form > label {
   }
 
   /* Eduction Small Section */
-  .small-slider-section {
+  .education-section {
     margin-bottom: 20px;
   }
   .slide h3 {
@@ -1190,7 +1192,7 @@ form > label {
   .slide p {
     font-size: 15px;
   }
-  .small-slider-section > div > h2 {
+  .education-section > div > h2 {
     font-size: 30px;
     margin-bottom: 25px;
     color: whitesmoke;
@@ -1252,10 +1254,10 @@ form > label {
     padding: 10px;
     height: 360px;
   }
-  .small-project-section {
+  .project-section {
     margin-bottom: 20px;
   }
-  .small-project-section > div > h2 {
+  .project-section > div > h2 {
     font-size: 30px;
     margin-bottom: 25px;
   }
